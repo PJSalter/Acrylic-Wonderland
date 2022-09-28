@@ -11,6 +11,14 @@ set( {:title => "Acrylic Wonderland" } )
 
 set(background: "purple", width: 640, height: 480)
 
+# circle class
+Circle.new(
+  x: 40,
+  y: 40,
+  color: 'green',
+  radius: 200
+)
+
 puts 'hello world'
 
 show
