@@ -22,6 +22,13 @@ circle = Circle.new(
 on :key_held do |move|
   case move.key
   when 'up'
+    circle.y -= 5
+  when 'down'
+    circle.y += 5
+  when 'left'
+    circle.x -= 5
+  when 'right'
+    circle.x += 5
   end
 end
 
