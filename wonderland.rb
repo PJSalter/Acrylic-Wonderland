@@ -11,6 +11,27 @@ set( {:title => "Acrylic Wonderland" } )
 
 set(background: "purple", width: 640, height: 480)
 
+# circle class
+circle = Circle.new(
+  x: 40,
+  y: 40,
+  color: 'green',
+  radius: 200
+)
+
+on :key_held do |move|
+  case move.key
+  when 'up'
+    circle.y -= 5
+  when 'down'
+    circle.y += 5
+  when 'left'
+    circle.x -= 5
+  when 'right'
+    circle.x += 5
+  end
+end
+
 puts 'hello world'
 
 show
